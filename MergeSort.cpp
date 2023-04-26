@@ -68,7 +68,7 @@ void mergeSort(int arr[], int const begin, int const end)
 int main()
 {
 	int n;
-	int arr[MAXSIZE];// = { 12, 11, 13, 5, 6, 7 };
+	int arr[MAXSIZE];
 	
 	printf("Nhap so luong phan tu: ");
 	scanf_s("%d", &n);
