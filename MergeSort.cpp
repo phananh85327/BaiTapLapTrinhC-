@@ -54,12 +54,12 @@ void merge(int array[], int left, int mid, int right)
 	delete[] rightArray;
 }
 
-void mergeSort(int arr[], int const begin, int const end)
+void mergeSort(int arr[], int begin, int end)
 {
 	if (begin >= end)
 		return;
 
-	auto mid = begin + (end - begin) / 2;
+	int mid = begin + (end - begin) / 2;
 	mergeSort(arr, begin, mid);
 	mergeSort(arr, mid + 1, end);
 	merge(arr, begin, mid, end);
